@@ -153,6 +153,60 @@
                 </div>
             </div>
        
+<style>
+  /* Vastuse peitmine / näitamine */
+  .answer-reveal {
+    display: none;
+    margin-top: 0.5rem;
+  }
+
+  .revealed .answer-reveal {
+    display: block;
+  }
+
+  .math-font {
+    font-family: "Times New Roman", serif;
+    font-weight: bold;
+  }
+</style>
+
+<section id="theory" class="scroll-mt-24">
+  <div class="flex items-center space-x-4 mb-8">
+    <div class="w-12 h-12 bg-indigo-100 rounded-2xl flex items-center justify-center text-indigo-600 text-2xl">
+      📖
+    </div>
+    <h3 class="text-3xl font-bold">1. Kiire meeldetuletus</h3>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div
+      class="p-6 rounded-3xl bg-white border border-slate-200 shadow-sm cursor-pointer group"
+      onclick="this.classList.toggle('revealed')"
+    >
+      <h4 class="text-xl font-bold">Mis on võrrand?</h4>
+      <div class="answer-reveal text-slate-700">
+        Võrrand on tundmatuga võrdus. Näiteks
+        <span class="math-font">x + 5 = 12</span>.
+      </div>
+      <p class="text-xs text-slate-400 mt-2">
+        Klõpsa, et näha meeldetuletust
+      </p>
+    </div>
+
+    <div
+      class="p-6 rounded-3xl bg-white border border-slate-200 shadow-sm cursor-pointer group"
+      onclick="this.classList.toggle('revealed')"
+    >
+      <h4 class="text-xl font-bold">Mis on lahend?</h4>
+      <div class="answer-reveal text-slate-700">
+        See on tundmatu väärtus, mille korral võrrand muutub tõeseks võrduseks.
+      </div>
+      <p class="text-xs text-slate-400 mt-2">
+        Klõpsa, et näha meeldetuletust
+      </p>
+    </div>
+  </div>
+</section>
 
             <div class="flex items-center space-x-4 mb-8">
                 <div class="w-12 h-12 bg-indigo-100 rounded-2xl flex items-center justify-center text-indigo-600 text-2xl">📖</div>
